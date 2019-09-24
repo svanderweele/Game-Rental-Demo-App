@@ -15,7 +15,6 @@ class GameSeeder extends Seeder
         Game::create([ 
             'name' => 'Manhunt',
             'age_requirement' => 18,
-            'stock' => 5
         ]);
     }
 }

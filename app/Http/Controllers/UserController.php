@@ -30,6 +30,10 @@ class UserController extends Controller
         return response()->json($response, 200);
     }
 
+    public function me(Request $request)
+    {
+        return auth('api')->user()->defaultResponse();
+    }
 
     public function register(Request $request)
     {

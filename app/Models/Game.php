@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Game extends Model
 {
     protected $fillable = [
-        'name', 'stock', 'age_requirement'
+        'name', 'age_requirement'
     ];
 
     protected $casts = [
@@ -22,7 +22,6 @@ class Game extends Model
     public function defaultResponse(){
         return [
             'name' => $this['name'],
-            'stock' => $this['stock'],
             'age_requirement' => $this['age_requirement'],
         ];
     }
